@@ -339,7 +339,7 @@ For the button, you want to position it on your breadboard so that the legs on o
 
 All the code that you write for this project will be in the single distribution file. This includes not only the code for drawing the invaders and the player cannon, but also the code that determines whether the player has won or lost. The Arduino framework relies on two functions:
 
-* setup() - This function is called at the very beginning when the Arduino starts. Any initialization code - including setting the Arduino to properly read from the potentiometer and the button, and to properly output to the LED screen - should be done in this function.
+* setupGame() - This function is called at the very beginning when the Arduino starts. Any initialization code - including setting the Arduino to properly read from the potentiometer and the button, and to properly output to the LED screen - should be done in this function.
 * loop() - This function is called repeatedly as the Arduino runs. This is where you will implement most of the game logic.
 
 For convenience, we have outlined several classes for you. *You are not required to use these classes*, but they may help you get started. We have also given you several function headers. You are not required to use our functions if you don't want to. You can create your own. 
@@ -384,11 +384,11 @@ Be careful! If you use either function too many times in your code, your code co
 ## Arduino Uno
 
 Before completing your game, it is helpful to understand the basic operation of the Arduino Uno.
-Every [sketch](https://www.arduino.cc/en/tutorial/sketch) (program) for the Arduino contains two special functions: `setup()` and `loop()`.
-The `setup()` is called once, when the sketch starts.
+Every [sketch](https://www.arduino.cc/en/tutorial/sketch) (program) for the Arduino contains two special functions: `setup()`  (called `setupGame()` in our code) and `loop()`.
+The `setupGame()` is called once, when the sketch starts.
 It's a good place to do setup tasks like setting pin modes or initializing libraries. 
 The `loop()` function is called over and over and is heart of most sketches.
-The [Distribution Code](#distribution-code) already has the `setup()` and `loop()` functions defined for you. 
+The [Distribution Code](#distribution-code) already has the `setupGame()` and `loop()` functions defined for you. 
 
 ![How the Arduino Uno executes sketches (programs)](readme_files/flow.png)
 
