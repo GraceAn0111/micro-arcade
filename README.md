@@ -163,7 +163,7 @@ The initial layout and the strength of the invaders depends on the level. All le
         5 4 5 4 5 4 5 4
         2 3 2 3 2 3 2 3
 
-* On Level 5 and after, the 16 invaders will have randomly chosen strengths. This means level 5 and every level onwards should be different every time it is played (levels should be different every time we play them, do NOT create a set of levels to cycle through).
+* On Level 5 and after, the 16 invaders will have randomly chosen strengths. This means level 5 and every level onwards should be different each time it is played (levels should be different every time we play them, do NOT create a set of levels to cycle through). See the Arduino Reference page on the [random()](https://www.arduino.cc/reference/en/language/functions/random-numbers/random/) and [randomSeed()](https://www.arduino.cc/reference/en/language/functions/random-numbers/randomseed/) functions to see how to approach this.
 
 ### Graphics
 
@@ -249,9 +249,7 @@ For the button, you want to position it on your breadboard so that the legs on o
 
     ![How the ribbon cable is wired when it's lying flat](readme_files/flat-cable-connections.png)
 
-5. Plug one end of your ribbon cable into the input connector in your LED screen, then flip the screen back over and lay everything flat again. Because the LED screen is now flipped from when you were reading the pin labels, the pins are also flipped. That is, for the unplugged end of the cable, the corresponding labels would be(NOTE: MAKE SURE THE RED STRIPE IS AT THE TOP LIKE IN THE BELOW IMAGE):
-
-    ![The labels from the LED screen are flipped on the other end of the ribbon cable](readme_files/flipped-cable-pins.png)
+5. Plug one end of your ribbon cable into the input connector in your LED screen, then flip the screen back over and lay everything flat again. Because the LED screen is now flipped from when you were reading the pin labels, the pins are also flipped. That is, for the unplugged end of the cable, the corresponding labels would match those in Step 9 (NOTE: MAKE SURE THE RED STRIPE IS AT THE TOP LIKE IN THE IMAGE BELOW).
 
 6. Just one more thing before we begin wiring. By convention, different colored wires are used for different things, so that it's easier to separate them. The most common convention is to use red wires for power, and black wires for ground. In this project, we will also be using wires that represent the red, green, and blue values of LEDs. If you don't have wires of these colors, don't worry - you can still do the project, you'll just have to keep track of the different wires more carefully.
 
@@ -366,7 +364,7 @@ In addition to Arduino functions, the Adafruit screen also has functions you can
 * `Color333(int r, int g, int b)` returns a `COLOR` where the `int` arguments are the red, green, and blue aspects of a color in [the RGB model](http://en.wikipedia.org/wiki/RGB_color_model) In this case, the arguments `r`, `g`, and `b` must be between 0 and 7 inclusive.
 * `drawPixel(int x, int y, COLOR)` turns the pixel at (x, y) into the specified color. Since the screen is 32 LEDs wide by 16 LEDs high, this function requires `0 <= x < 32` and `0 <= y < 16`. If `COLOR` is black (ie. `r == g == b == 0`), then the LED is turned off.
 * `fillScreen(COLOR)` turns every pixel of the screen to the specified `COLOR`.
-* `print(char c)` switches the LEDs on screen to display the character `c`. The effects of this function is modified by several other functions; see below.
+* `print(char c)` switches the LEDs on screen to display the character `c`. This function can be used with the setCursor() function to print strings of text to the screen. The effects of this function is modified by several other functions; see below.
 * `setCursor(int x, int y)` moves the "cursor" of the screen to the (x, y) location. This changes the effect of `print()`.
 * `setTextColor(COLOR)` sets the color of printed text to `COLOR`. This changes the effect of `print()`.
 * `setTextSize(int size)` sets the size printed text. A `size` of 1 means the text will be 8 LEDs tall. This changes the effect of `print()`.
@@ -498,8 +496,6 @@ Submissions will occur via your team GitHub repository. You will create a sketch
 |Invader movement/death   |       14       |
 |Cannonball functionality |       11       |
 
-Note:
-
 # Troubleshooting
 
 If the Arduino IDE refuses to run on a Mac, even after you have installed a newer version of Java, you may need to download the experimental version. Go back to [the Arduino website](http://arduino.cc/en/Main/Software), download the experimental version (the one marked "for Java 7+"), and try again. If this still doesn't work, come talk to one of us.
@@ -509,11 +505,12 @@ If the Arduino IDE refuses to run on a Mac, even after you have installed a newe
 The Arduino Micro Arcade staff team has the following staff members.
 
 * Bill Arthur
+* Anna Schmidt
+* Lisa Cicatello
 * Zahra Makki
 * Aparajita Saraf
 * Krishna Trivedi
 * Madison Helsel
-* Stefan Falkenstein
 
 # References
 
