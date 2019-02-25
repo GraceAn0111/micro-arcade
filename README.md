@@ -300,36 +300,36 @@ For the button, you want to position it on your breadboard so that the legs on o
 
 3. Install and/or run the Arduino IDE. Follow any directions as necessary; in particular, on Macs, you may be asked to install a newer version of Java. Successfully starting the IDE should give you a window like this:
 
-    ![The Arduino IDE](readme_files/ide.png)
+    <img src="readme_files/ArduinoSoftwareSetup1.png" width="60%">
 
 4. Make sure that from the menubar, Tools > Board > Arduino Uno is selcted.
 
-    ![Selecting the Arduino Uno board](readme_files/select-board.png)
+    <img src="readme_files/ArduinoSoftwareSetup2.png" width="100%">
 
 5. Make sure that from the menubar, Tools > Port > Arduino Uno is selcted.
 
-    ![Selecting the Arduino Uno board](readme_files/select-port.png)
+    ![Selecting the Arduino Uno board](readme_files/ArduinoSoftwareSetup3.png)
 
 6. From the menubar, click Sketch > Import Library > Add Library (it may also be Sketch -> Include Library -> Add .ZIP library):
 
-    ![Adding a library to the Arduino IDE](readme_files/add-library.png)
+    <img src="readme_files/ArduinoSoftwareSetup4.png" width="80%">
 
 7. In the dialog, select the Adafruit GFX library (the adafruit-gfx directory in your Git directory).
 
-    ![Adding the Adafruit GFX library](readme_files/adafruit-library.png)
+    <img src="readme_files/ArduinoSoftwareSetup5.png" width="80%">
 
 8. Repeat steps 6 and 7 with the RGB Matrix Panel library (the rgb-master-panel directory in your Git directory)
 
-    ![Adding the RGB Matrix Panel library](readme_files/matrix-panel-library.png)
+    <img src="readme_files/ArduinoSoftwareSetup6.png" width="80%">
 
 9. Open the distribution code, cloned from your group repository in Step 1 above, from the menu. Alternately, you can open the distribution code from the Open button (the up-arrow) near the top of the IDE.
 
-    ![Opening the distribution code](readme_files/open-code.png)
-    ![Selecting the distribution code](readme_files/choose-code.png)
+    <img src="readme_files/ArduinoSoftwareSetup7.png" width="50%">
+    <img src="readme_files/ArduinoSoftwareSetup8.png" width="80%">
 
 10. Click the Verify button (the checkmark) near the top of the Arduino IDE. This compiles your code and checks for errors. If you get an "Error Compiling" message, make sure you have added the libraries correct (steps 6 - 8). A successful compilation looks like this:
 
-    ![The code compiles!](readme_files/compile-success.png)
+    <img src="readme_files/ArduinoSoftwareSetup9.png" width="60%">
 
 11. Congratulations! You are now ready to start programming your Arduino! Start by playing with the Arduino by looking at the examples under the `rgb-matrix-panel` directory. When you get a feel for how the functions work, it's time to start thinking about how you would write your Space Invader clone.
 
