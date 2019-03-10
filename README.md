@@ -362,7 +362,7 @@ In addition to Arduino functions, the Adafruit screen also has functions you can
 * `Color333(int r, int g, int b)` returns a `COLOR` where the `int` arguments are the red, green, and blue aspects of a color in [the RGB model](http://en.wikipedia.org/wiki/RGB_color_model) In this case, the arguments `r`, `g`, and `b` must be between 0 and 7 inclusive.
 * `drawPixel(int x, int y, COLOR)` turns the pixel at (x, y) into the specified color. Since the screen is 32 LEDs wide by 16 LEDs high, this function requires `0 <= x < 32` and `0 <= y < 16`. If `COLOR` is black (ie. `r == g == b == 0`), then the LED is turned off.
 * `fillScreen(COLOR)` turns every pixel of the screen to the specified `COLOR`.
-* `print(char c)` switches the LEDs on screen to display the character `c`. This function can be used with the setCursor() function to print strings of text to the screen. The effects of this function is modified by several other functions; see below.
+* `print(string s)` switches the LEDs on screen to display the string `s`. This function can be used with the setCursor() function to print strings of text to the screen. The effects of this function is modified by several other functions; see below.
 * `setCursor(int x, int y)` moves the "cursor" of the screen to the (x, y) location. This changes the effect of `print()`.
 * `setTextColor(COLOR)` sets the color of printed text to `COLOR`. This changes the effect of `print()`.
 * `setTextSize(int size)` sets the size printed text. A `size` of 1 means the text will be 8 LEDs tall. This changes the effect of `print()`.
@@ -458,12 +458,12 @@ To complete this step, you **must** have the correct GitHub usernames for all of
  
 Have ONE PERSON on your team sign your team up for a GitHub repository.
 
-* Have one person head to https://eecs183teams.herokuapp.com/[https://eecs183teams.herokuapp.com/^]
+* Have one person head to [https://eecs183teams.herokuapp.com/](https://eecs183teams.herokuapp.com/)
 * Login with you U of M uniqname
 * Choose a team name, only alphanumeric characters can be used
 * Enter each team member’s info
   * For each team member, make sure their uniqname is spelled correctly
-  * Make sure each member’s github username is correct and contains "EECS183:<your uniqname>" in their bio
+  * Make sure each member’s github username is correct and contains "EECS183:\<your uniqname>" in their bio
 * Choose a project
 * Submit!
   * After a few seconds the page should update to show your team members and the project you chose
