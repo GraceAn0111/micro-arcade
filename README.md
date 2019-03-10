@@ -464,7 +464,7 @@ Have ONE PERSON on your team sign your team up for a GitHub repository.
 * Enter each team member’s info
   * For each team member, make sure their uniqname is spelled correctly
   * Make sure each member’s github username is correct and contains "EECS183:\<your uniqname>" in their bio
-  * Be careful **not** to put a space between EECS183 and your uniqname! 
+  * Be careful, there must **not** be a space between EECS183 and your uniqname! 
 * Choose a project
 * Submit!
   * After a few seconds the page should update to show your team members and the project you chose
