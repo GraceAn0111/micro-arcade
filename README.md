@@ -1,5 +1,7 @@
 # Arduino Micro Arcade
 
+This project will be limited to the first 65 teams to request this project. Your team MUST submit a request using the [Arduino Team Sign-Up form](https://docs.google.com/forms/d/e/1FAIpQLScKS8gOCpozj_902ZeQy-UBkkMLby3mB7dmFb7eGQnZl4lZNA/viewform?usp=sf_link) by 6:00 pm on Sunday, March 31st. **Only one sign up per team**. Also note that, should the limit of 65 teams be reached before this time, the sign up form will close and your team will not be able to select this project. More details are found in the [Proposal](#proposal) section of this document.
+
 This project involves using the Arduino micro-controller link two sensors to an LED screen, so that you can play [Space Invaders](http://en.wikipedia.org/wiki/Space_Invaders). The goal of this project is for you to:
 
 * Gain experience working with hardware, including circuits and a little bit of soldering (soldering is **not** required for the core, but you may need to solder for your reach depending on the hardware you add).
@@ -9,11 +11,7 @@ This project involves using the Arduino micro-controller link two sensors to an 
 * Start moving beyond simply writing code to designing programs
 * Have fun!
 
-* **NOTE!!!**: **This project has reached the maximum capacity of 65 teams for the semester as of 6:15 pm on 11/18.** If you have not already completed the signup, please select another project. 
-
-This project will be limited to the first 65 teams to request this project. Your team MUST submit a request using the [Arduino Team Sign-Up form](https://goo.gl/forms/R1QlbHotxJEI98k92) by 11:59 pm on November 18th. **Only one sign up per team**. Also note that, should the limit of 65 teams be reached before this time, the sign up form will close and your team will not be able to select this project. More details are found in the [Proposal](#proposal) section of this document.
-
-* **NOTE!!!**: Distribution of Arduino hardware kits will start on Friday, November 16th. See the [Arduino Kit Distribution](https://eecs183.org/projects/final/arduino/) for more information about times and location.
+* **NOTE!!!**: Distribution of Arduino hardware kits will start on Friday, March 29th. See the [Arduino Kit Distribution](https://eecs183.org/projects/final/arduino/) for more information about times and location.
 
 Your team will be provided all of the hardware to complete the project.
 
@@ -60,8 +58,8 @@ Your team will be provided with the following necessary hardware
 * 1 Arduino Uno
 * 1 Adafruit 16x32 RGB Matrix Panel
 * 1 breadboard
-* 1 potentiometers
-* 1 button
+* 2 potentiometers
+* 2 buttons
 * 1 flat ribbon cable
 * 1 USB cable
 * 1 5V power converter
@@ -406,7 +404,7 @@ You may NOT implement pong or block breaker. If you want to implement snake or f
 
 From the basic use of the Arduino microcontroller, there are many extensions for this project. Here is a short list meant to inspire your team. The list of possible extensions to this project is limited only by your imagination:
 
-* Adding sound to your games and an LCD display for a scoreboard would be nice and is something you should look into, but this would not be a complete extension considering how simple it is. You would have to couple it with a few more ideas. 
+* Adding sound to your games but this would not be a complete extension considering how simple it is. You would have to couple it with a few more ideas. 
 * Program an additional game of your own creation.
 * Change the rules of the current game so that it has a more difficult implementation.
 
@@ -416,7 +414,7 @@ We are most impressed by students being creative and implementing their own game
 * Another classic arcade game (see exceptions above).  A quick google search will find dozens of potential ideas
 * A **significantly** upgraded Invaders game. An example is a game with a combination of interesting boss levels and new gameplay elements (power ups, invaders shoot cannonballs, multiplayer functionality, a variety of different weapons, an AI that learns to beat the invaders, etc.).
 
-NOTE: You are free to obtain and use new hardware in your Reach. Be sure to plan ahead; you will likely have to order all additional hardware over the internet and wait for it to arrive. We will provide extra buttons, potentiometers, resistors, wires, and breadboards as requested.  
+NOTE: You are free to obtain and use new hardware in your Reach. Be sure to plan ahead; you will likely have to order all additional hardware over the internet and wait for it to arrive. We will provide extra buttons, potentiometers, resistors, wires, and breadboards as requested. 
 
 # Proposal
 
@@ -430,7 +428,7 @@ In preparation to complete the project proposal, your team will need the followi
 
 ## Step 0 of 3
 
-**NOTE!!!**: This project will be limited to the first 65 teams to request this project. Your team MUST submit a request using the [Arduino Team Sign-Up form](https://goo.gl/forms/R1QlbHotxJEI98k92) by 11:59 pm on March 25th. **Only one sign up per team, please**. Failure to do so will disqualify your team from selecting this project. Also note that if the limit of 65 teams is reached, no futher teams will be allowed to complete this project. Form your team early and complete the [Arduino Team Sign-Up form](https://goo.gl/forms/R1QlbHotxJEI98k92)! Then your team may complete and submit your proposal, as detailed below.
+**NOTE!!!**: This project will be limited to the first 65 teams to request this project. Your team MUST submit a request using the [Arduino Team Sign-Up form](https://docs.google.com/forms/d/e/1FAIpQLScKS8gOCpozj_902ZeQy-UBkkMLby3mB7dmFb7eGQnZl4lZNA/viewform?usp=sf_link) by 6:00 pm on Sunday, March 31st. **Only one sign up per team, please**. Failure to do so will disqualify your team from selecting this project. Also note that if the limit of 65 teams is reached, no futher teams will be allowed to complete this project. Form your team early and complete the [Arduino Team Sign-Up form](https://docs.google.com/forms/d/e/1FAIpQLScKS8gOCpozj_902ZeQy-UBkkMLby3mB7dmFb7eGQnZl4lZNA/viewform?usp=sf_link)! Then your team may complete and submit your proposal, as detailed below.
 
 ## Step 1 of 3
 
@@ -456,18 +454,28 @@ As well as these warm-up questions about the project:
 ## Step 2 of 3
 
 Only one person per team needs to complete the following instructions.
-Submit your proposals in PDF format by **Sunday 3/25** to [EECS 183 on Gradescope](https://www.gradescope.com/courses/18600).
+To complete this step, you **must** have the correct GitHub usernames for all of you team members.
+ 
+Have ONE PERSON on your team sign your team up for a GitHub repository.
 
-* Head to [EECS 183 on Gradescope](https://www.gradescope.com/courses/18600). Then choose **Proposal: Arduino** from the assignments list. Select **Submit PDF** and upload your proposal.pdf.
-* Once the PDF file has been uploaded, select pages corresponding to each part (i.e., question) of the proposal assignment. Click **Save**.
-* Click on **Add Group Member** on the top right. Add the three other members of your team by typing their names or email addresses. Once everyone on your team is in the list, click **Save**. Everyone who has been added to the group on Gradescope will receive an email and will be able to access the submission, including the score and staff's comments after the proposal has been graded.
+* Have one person head to https://eecs183teams.herokuapp.com/[https://eecs183teams.herokuapp.com/^]
+* Login with you U of M uniqname
+* Choose a team name, only alphanumeric characters can be used
+* Enter each team member’s info
+  * For each team member, make sure their uniqname is spelled correctly
+  * Make sure each member’s github username is correct and contains "EECS183:<your uniqname>" in their bio
+* Choose a project
+* Submit!
+  * After a few seconds the page should update to show your team members and the project you chose
 
 ## Step 3 of 3
 
 Only one person per team needs to complete the following instructions.
-To complete this step, you **must** have the correct GitHub usernames for all of you team members.
- 
-Have ONE PERSON on your team sign your team up for a GitHub repository. The signup page will be announced on the course website, TBA.
+Submit your proposals in PDF format by **Sunday 3/31** to [EECS 183 on Gradescope](https://www.gradescope.com/courses/36883).
+
+* Head to [EECS 183 on Gradescope](https://www.gradescope.com/courses/36883). Then choose **Proposal: Arduino** from the assignments list. Select **Submit PDF** and upload your proposal.pdf.
+* Once the PDF file has been uploaded, select pages corresponding to each part (i.e., question) of the proposal assignment. Click **Save**.
+* Click on **Add Group Member** on the top right. Add the three other members of your team by typing their names or email addresses. Once everyone on your team is in the list, click **Save**. Everyone who has been added to the group on Gradescope will receive an email and will be able to access the submission, including the score and staff's comments after the proposal has been graded.
 
 
 # Project Submission
@@ -478,15 +486,15 @@ Submissions will occur via your team GitHub repository. You will create a sketch
 
 | Project Component   | Maximum Points | Due Date  |         How to Submit         |
 |:-------------------:|:--------------:|:---------:|:-----------------------------:|
-|Team Sign Up         |      0         |   11/18   | Google Form                   |
-|Proposal             |      10        |   11/18   | Gradescope                    |
-|Core                 |      50        |   11/30   | GitHub                        |
-|Core Team Evaluation |      5         |   12/01   | TBA                           |
-|Reach                |      50        |   12/11   | GitHub                        |
-|Final Team Evaluation|      5         |   12/14   | TBA                           |
-|Showcase             |      10        |   12/19   | Attendance + Presentation     |
+|Team Sign Up         |      0         |   3/31   | https://eecs183teams.herokuapp.com/  |
+|Proposal             |      10        |   3/31   | Gradescope                    |
+|Core                 |      50        |   4/12   | GitHub                        |
+|Core Team Evaluation |      5         |   4/13   | https://eecs183teams.herokuapp.com/  |
+|Reach                |      50        |   4/23   | GitHub                        |
+|Showcase             |      10        |   4/25   | Attendance + Presentation     |
+|Final Team Evaluation|      5         |   4/26   | https://eecs183teams.herokuapp.com/  |
 
-# Grading Rubric
+# Grading Rubric - Core
 
 | Project Component       |     Points     |
 |:-----------------------:|:--------------:|
