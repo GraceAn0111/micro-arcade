@@ -246,7 +246,7 @@ class Game {
 Game game;
 
 // see https://www.arduino.cc/reference/en/language/structure/sketch/setup/
-void setupGame() {
+void setup() {
   Serial.begin(9600);
   pinMode(BUTTON_PIN_NUMBER, INPUT);
   matrix.begin();
